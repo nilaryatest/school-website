@@ -99,7 +99,7 @@ function Footer() {
                 </div>
                 <div className="group">
                   <p className="text-[10px] font-black text-secondary uppercase tracking-widest mb-1 opacity-60 group-hover:opacity-100 transition-opacity">Registrar Office</p>
-                  <p className="text-sm text-slate-300">+91 12345 67890</p>
+                  <p className="text-sm text-slate-300">+91 98765 67890</p>
                 </div>
                 <div className="group">
                   <p className="text-[10px] font-black text-highlight uppercase tracking-widest mb-1 opacity-60 group-hover:opacity-100 transition-opacity">Correspondence</p>
