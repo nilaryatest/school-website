@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
+import { config } from "../config"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -72,9 +73,9 @@ function Navbar() {
         </div>
 
         {/* Action Portal Button (Contact) */}
-        <Link to="/contact" className="hidden lg:flex bg-highlight text-white hover:bg-white hover:text-primary px-8 py-2.5 rounded-full text-[11px] font-black uppercase tracking-widest transition-all duration-500 hover:scale-105 active:scale-95 border border-white/20">
+        <a href={`${config.smsAppUrl}/login`} className="hidden lg:flex bg-highlight text-white hover:bg-white hover:text-primary px-8 py-2.5 rounded-full text-[11px] font-black uppercase tracking-widest transition-all duration-500 hover:scale-105 active:scale-95 border border-white/20">
           Student & Staff Login
-        </Link>
+        </a>
 
         {/* Mobile Toggle */}
         <button
@@ -110,13 +111,13 @@ function Navbar() {
               </Link>
             ))}
           </div>
-          <Link
-            to="/contact"
+          <a
+            href={`${config.smsAppUrl}/login`}
             className="w-full mt-6 bg-highlight text-white font-black py-5 rounded-2xl flex items-center justify-center text-xs uppercase tracking-[0.3em] hover:scale-[1.02] transition-transform"
             onClick={() => setIsOpen(false)}
           >
             Student & Staff Login
-          </Link>
+          </a>
         </div>
       </nav>
     </div>
